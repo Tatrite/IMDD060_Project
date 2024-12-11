@@ -9,11 +9,18 @@ public class VM extends parefeu{
     private String pareFeu;
     private Boolean started;
 
+    // CONSTRUCTEUR
+
+    public VM() {
+    
+    }
+
     // MÉTHODES
 
     public void start() {
         this.started = true;
     }
+
     public void stop() {
         this.started = false;
     }

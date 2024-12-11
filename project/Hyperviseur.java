@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Scanner;
 
 public class Hyperviseur extends parefeu{
 
@@ -23,6 +24,30 @@ public class Hyperviseur extends parefeu{
 
     public void stop() {
         this.started = false;
+    }
+    
+    public VM createVM() {
+        Scanner sc = new Scanner(System.in);
+        VM vm = new VM();
+
+        System.out.println("Nom de la VM: ");
+        String nom = sc.next();
+        System.out.println("RAM de la VM: ");
+        String ram = sc.next();
+        System.out.println("CPU de la VM: ");
+        String cpu = sc.next();
+        System.out.println("Stockage de la VM: ");
+        String stockage = sc.next();
+        System.out.println("Nom du Pare-Feu de la VM: ");
+        String pareFeu = sc.next();
+
+        vm.setNom(nom);
+        vm.setRAM(ram);
+        vm.setCPU(cpu);
+        vm.setStockage(stockage);
+        vm.setPareFeu(pareFeu);
+
+        return vm;
     }
 
     // GETTER & SETTER
