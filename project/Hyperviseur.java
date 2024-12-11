@@ -78,10 +78,10 @@ public class Hyperviseur {
         HIp = hIp;
     }
 
-    public List<String> getVMList() {
+    public List<VM> getVMList() {
         return VMList;
     }
-    public void setVMList(List<String> vMList) {
+    public void setVMList(List<VM> vMList) {
         VMList = vMList;
     }
 
