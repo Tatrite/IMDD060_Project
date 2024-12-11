@@ -10,7 +10,7 @@ public class Regle_parefeu {
     private String protocole;
     private String nom;
     private Boolean status;
-    private String authorized; 
+    private String authorized;
 
     // GETTER & SETTER    
 
@@ -74,14 +74,13 @@ public class Regle_parefeu {
     
     public List<String> filtrer () {
             return 0;
-        
     }
 
-    public void active(){
+    public void enable(){
         this.status = true ;
     }
 
-    public void desactive(){
+    public void disable(){
         this.status = false ;
     }
 }
