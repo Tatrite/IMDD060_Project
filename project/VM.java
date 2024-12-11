@@ -11,7 +11,12 @@ public class VM {
 
     // MÉTHODES
 
-    public void 
+    public void start() {
+        this.started = true;
+    }
+    public void stop() {
+        this.started = false;
+    }
 
     // GETTER & SETTER
 
@@ -48,6 +53,10 @@ public class VM {
     }
     public void setPareFeu(String pareFeu) {
         this.pareFeu = pareFeu;
+    }
+
+    public Boolean isStarted() {
+        return started;
     }
 
     

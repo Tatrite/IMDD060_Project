@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Hyperviseur extends FireWall{
 
     // ATTRIBUTS
@@ -44,6 +46,10 @@ public class Hyperviseur extends FireWall{
     }
     public void setVMList(List<String> vMList) {
         VMList = vMList;
+    }
+
+        public Boolean isStarted() {
+        return started;
     }
     
 
