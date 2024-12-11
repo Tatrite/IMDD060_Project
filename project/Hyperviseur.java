@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
-public class Hyperviseur extends parefeu{
+public class Hyperviseur {
 
     // ATTRIBUTS
 
@@ -47,6 +47,7 @@ public class Hyperviseur extends parefeu{
         vm.setStockage(stockage);
         vm.setPareFeu(pareFeu);
 
+        sc.close();
         return vm;
     }
 

@@ -1,4 +1,4 @@
-public class VM extends parefeu{
+public class VM {
 
     // ATTRIBUTS
 
