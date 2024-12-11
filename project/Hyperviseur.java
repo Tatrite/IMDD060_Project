@@ -7,7 +7,7 @@ public class Hyperviseur {
 
     private String hostName;
     private String HIp;
-    private List<String> VMList;
+    private List<VM> VMList;
     private Boolean started;
 
     // CONSTRUCTEUR
@@ -26,7 +26,7 @@ public class Hyperviseur {
         this.started = false;
     }
     
-    public VM createVM() {
+    public int createVM() {
         Scanner sc = new Scanner(System.in);
         VM vm = new VM();
 
@@ -47,8 +47,10 @@ public class Hyperviseur {
         vm.setStockage(stockage);
         vm.setPareFeu(pareFeu);
 
+        this.VMList.add(vm);
+
         sc.close();
-        return vm;
+        return 1;   // Pour traiter un succès dans le main
     }
 
     // GETTER & SETTER
