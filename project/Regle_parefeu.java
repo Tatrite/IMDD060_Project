@@ -7,7 +7,7 @@ public class Regle_parefeu {
     private String destination;
     private String protocole;
     private String nom;
-    private String status;
+    private Boolean status;
     private String authorized; 
     
 
@@ -51,11 +51,11 @@ public class Regle_parefeu {
         this.nom = nom;
     }
 
-    public String getStatus() {
+    public Boolean getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Boolean status) {
         this.status = status;
     }
 
@@ -74,11 +74,11 @@ public class Regle_parefeu {
         
     }
 
-    public Boolean active(){
-        self.active = true ;
+    public void active(){
+        this.status = true ;
     }
 
-    public Boolean desactive(){
-        self.active = false ;
+    public void desactive(){
+        this.status = false ;
     }
 }

@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Hyperviseur extends FireWall{
+public class Hyperviseur extends parfeu{
 
     // ATTRIBUTS
 
@@ -17,11 +17,11 @@ public class Hyperviseur extends FireWall{
 
     // MÉTHODE
 
-    public boolean start() {
+    public void start() {
         this.started = true;
     }
 
-    public boolean stop() {
+    public void stop() {
         this.started = false;
     }
 
@@ -34,10 +34,10 @@ public class Hyperviseur extends FireWall{
         this.hostName = hostName;
     }
 
-    public int getHIp() {
+    public String getHIp() {
         return HIp;
     }
-    public void setHIp(int hIp) {
+    public void setHIp(String hIp) {
         HIp = hIp;
     }
 
