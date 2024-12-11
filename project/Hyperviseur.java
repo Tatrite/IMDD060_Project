@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Hyperviseur extends parfeu{
+public class Hyperviseur extends parefeu{
 
     // ATTRIBUTS
 

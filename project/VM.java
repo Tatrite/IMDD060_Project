@@ -1,4 +1,4 @@
-public class VM extends parfeu{
+public class VM extends parefeu{
 
     // ATTRIBUTS
 
