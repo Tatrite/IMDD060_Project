@@ -53,6 +53,15 @@ public class Hyperviseur {
         return 1;   // Pour traiter un succès dans le main
     }
 
+    public int deleteVM(String nom) {
+        for (int i = 0; i < VMList.size(); i++) {
+            if (VMList.get(i).getNom() == nom)
+                VMList.remove(i);
+                return 1;   // Pour traiter un succès
+        }
+        return -1;  // Pour traiter un échec
+    }
+
     // GETTER & SETTER
 
     public String getHostName() {
