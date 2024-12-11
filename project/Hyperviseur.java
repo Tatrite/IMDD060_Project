@@ -62,6 +62,23 @@ public class Hyperviseur {
         return -1;  // Pour traiter un échec
     }
 
+    public void showVMList() {
+        if (VMList.size() == 0) {
+            System.out.println("Nothing to show for now...");
+        } else {
+            for (int i = 0; i < VMList.size(); i++) {
+                String nom = VMList.get(i).getNom();
+                String ram = VMList.get(i).getRAM();
+                String cpu = VMList.get(i).getCPU();
+                String stockage = VMList.get(i).getStockage();
+                String pareFeu = VMList.get(i).getPareFeu();
+                Boolean status = VMList.get(i).isStarted();
+                
+                System.out.println(String.format("VM%d:    %s    |    %s    |    %s    |    %s    |    %s    |    Status: %b", i, nom, ram, cpu, stockage, pareFeu, status));
+            }
+        }
+    }
+
     // GETTER & SETTER
 
     public String getHostName() {
