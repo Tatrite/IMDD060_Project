@@ -73,4 +73,12 @@ public class Regle_parefeu {
             return 0;
         
     }
+
+    public Boolean active(){
+        self.active = true ;
+    }
+
+    public Boolean desactive(){
+        self.active = false ;
+    }
 }
