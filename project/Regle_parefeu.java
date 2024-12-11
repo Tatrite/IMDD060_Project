@@ -2,6 +2,8 @@ import java.util.List;
 
 public class Regle_parefeu {
 
+    // ATTRIBUTS
+
     private String ip;
     private Integer port;
     private String destination;
@@ -9,7 +11,8 @@ public class Regle_parefeu {
     private String nom;
     private Boolean status;
     private String authorized; 
-    
+
+    // GETTER & SETTER    
 
     public String getIp() {
         return ip;
@@ -67,7 +70,7 @@ public class Regle_parefeu {
         this.authorized = authorized;
     }
 
-
+    // MÉTHODES
     
     public List<String> filtrer () {
             return 0;
