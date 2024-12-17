@@ -1,3 +1,4 @@
+package project;
 import java.util.List;
 
 public class Regle_parefeu {
@@ -72,9 +73,11 @@ public class Regle_parefeu {
 
     // MÉTHODES
     
-    public List<String> filtrer () {
-            return 0;
-    }
+    // public List<String> filtrer () {
+    //     List<String> gg ;
+    //     gg.add("authorized");
+    //     return gg;
+    // }
 
     public void enable(){
         this.status = true ;
